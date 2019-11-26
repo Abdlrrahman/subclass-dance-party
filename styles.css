@@ -3,7 +3,10 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+ background-image: url('https://wallpaperplay.com/walls/full/2/5/a/222638.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ /*height: 100vw;*/
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -21,7 +24,14 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  border:10px solid yellow;
   border-radius:10px;
   position:absolute;
 }
+
+.blue{
+  border:10px solid blue;
+  border-radius:10px;
+  position:absolute;
+}
+
