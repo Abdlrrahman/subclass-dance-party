@@ -3,7 +3,7 @@ body, html{
 }
 body{
   margin: 0px;
- background-image: url('https://wallpaperplay.com/walls/full/2/5/a/222638.jpg');
+ background-image: url('https://cdn5.vectorstock.com/i/1000x1000/10/49/football-field-top-view-vector-7671049.jpg');
  background-repeat: no-repeat;
  background-size: cover;
  /*height: 100vw;*/
@@ -31,6 +31,18 @@ body, a:link, a:visited, a:active{
 
 .blue{
   border:10px solid blue;
+  border-radius:10px;
+  position:absolute;
+}
+
+.add {
+  border:10px solid red;
+  border-radius:10px;
+  position:absolute;
+}
+
+.white {
+  border:10px solid white;
   border-radius:10px;
   position:absolute;
 }

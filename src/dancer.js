@@ -3,15 +3,18 @@ var MakeDancer = function(top, left, timeBetweenSteps) {
   // use jQuery to create an HTML <span> tag
  
   this.$node = $('<span class="dancer"></span>');
-  // this.styleSettings = {
-  //     top: top,
-  //     left: left
-  //   };
  this.setPosition(top, left);
  this.step();
  this.timeBetweenSteps = timeBetweenSteps;
+
   };
 
+  MakeDancer.prototype.lineUp = function() {
+    var styleSettings = {
+      top: 200
+    };
+    this.$node.css(styleSettings);
+  }
   MakeDancer.prototype.step = function() {
     // the basic dancer doesn't do anything interesting at all on each step,
     // it just schedules the next step
@@ -28,6 +31,8 @@ var MakeDancer = function(top, left, timeBetweenSteps) {
     };
     this.$node.css(styleSettings);
   };
+
+  var line = new MakeDancer().lineUp()
 
   // now that we have defined the dancer object, we can start setting up important parts of it by calling the methods we wrote
   // this one sets the position to some random default point within the body
